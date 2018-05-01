@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.4.4",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -55,6 +56,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-plugin-import": "^1.7.0",
     "node-sass": "^4.8.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
@@ -97,6 +99,9 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      ["import", { "libraryName": "antd", "style": "css" }]
     ]
   },
   "eslintConfig": {

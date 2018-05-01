@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Home from './home/containers/Home';
 import Admin from './admin/containers/admin/Admin';
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
+import './App.css';
 //import ReactDOM from 'react-dom';
 
 class App extends Component{
