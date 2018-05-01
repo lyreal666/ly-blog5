@@ -1,0 +1,18 @@
+Link
+现在，我们应用需要在各个页面间切换。如果使用锚点元素（就是）实现，在每次点击时页面将被重新加载。React Router提供了<Link>组件用来避免这种状况的发生。当你点击<Link>时，URL会更新，组件会被重新渲染，但是页面不会重新加载。
+
+import { Link } from 'react-router-dom'
+const Header = () => (
+  <header>
+    <nav>
+      <ul>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/roster'>Roster</Link></li>
+        <li><Link to='/schedule'>Schedule</Link></li>
+      </ul>
+    </nav>
+  </header>
+)
+<Link>使用'to'参数来描述需要定位的页面。它的值即可是字符串也可是location对象（包含pathname，search，hash与state属性）。如果其值为字符床将会被转换为location对象。
+
+<Link to={{ pathname: '/roster/7' }}>Player #7</Link>
