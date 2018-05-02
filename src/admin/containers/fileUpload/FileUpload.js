@@ -1,6 +1,7 @@
 "use strict";
 
 import React, {Component} from 'react';
+import { Upload, message, Button, Icon } from 'antd';
 
 const debug = (...args) => {
     console.log(args.reduce((x, y) => x + y + ' ', ''));
@@ -26,31 +27,28 @@ class FileUpload extends Component {
     render() {
         return (
             <div className={'container'}>
-                <form className="form-horizontal">
-                    <div className="form-group">
-                        <label htmlFor="inputEmail3" className="col-sm-2 control-label">Email</label>
+                <form>
+                    <div className="form-group row">
+                        <label htmlFor="file-type" className="col-sm-2 col-form-label">文件类型:</label>
                         <div className="col-sm-10">
-                            <input type="email" className="form-control" id="inputEmail3" placeholder="Email"/>
+                            <input type="text" className="form-control" id="file-type" placeholder="类似图片,html布局..."/>
                         </div>
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="inputPassword3" className="col-sm-2 control-label">Password</label>
+                    <div className="form-group row">
+                        <label htmlFor="file-use" className="col-sm-2 col-form-label">文件用途:</label>
                         <div className="col-sm-10">
-                            <input type="password" className="form-control" id="inputPassword3" placeholder="Password"/>
+                            <input type="text" className="form-control" id="file-use" placeholder="类似lab-block.."/>
                         </div>
                     </div>
-                    <div className="form-group">
-                        <div className="col-sm-offset-2 col-sm-10">
-                            <div className="checkbox">
-                                <label>
-                                    <input type="checkbox"/> Remember me
-                                </label>
-                            </div>
+                    <div className="form-group row">
+                        <label htmlFor="file-select" className="col-sm-2 col-form-label">选择文件</label>
+                        <div className="col-sm-10">
+                            <input type="file" className="form-control-file" id="file-select"/>
                         </div>
                     </div>
-                    <div className="form-group">
-                        <div className="col-sm-offset-2 col-sm-10">
-                            <button type="submit" className="btn btn-default">Sign in</button>
+                    <div className="form-group row">
+                        <div className="col-sm-10">
+                            <button type="submit" className="btn btn-primary">上传</button>
                         </div>
                     </div>
                 </form>
