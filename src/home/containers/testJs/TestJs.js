@@ -2,14 +2,14 @@
 
 import React, {Component} from 'react';
 import { Switch, Route } from 'react-router-dom';
-import LabList from '../labList/LabList';
-import TestJs from '../testJs/TestJs';
+import QuesList from './QuesList';
+import TestQues from './TestQues';
 
 const debug = (...args) => {
     console.log(args.reduce((x, y) => x + y + ' ', ''));
 };
 
-class Model extends Component {
+class TestJs extends Component {
     static defaultProps = {};
     static propTypes = {};
 
@@ -30,12 +30,12 @@ class Model extends Component {
         return (
             <div>
                 <Switch>
-                    <Route path='/home/lab' exact component={LabList}/>
-                    <Route path='/home/lab/testJs' component={TestJs}/>
+                    <Route path={'/home/lab/testJs'} exact component={QuesList}/>
+                    <Route path={'/home/lab/testJs/:testTitle'} component={TestQues}></Route>
                 </Switch>
             </div>
         )
     }
 }
 
-export default Model;
+export default TestJs;

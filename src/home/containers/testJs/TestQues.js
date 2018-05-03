@@ -1,9 +1,7 @@
 "use strict";
 
 import React, {Component} from 'react';
-import { Switch, Route } from 'react-router-dom';
-import LabList from '../labList/LabList';
-import TestJs from '../testJs/TestJs';
+import Ques from './Ques';
 
 const debug = (...args) => {
     console.log(args.reduce((x, y) => x + y + ' ', ''));
@@ -28,11 +26,9 @@ class Model extends Component {
 
     render() {
         return (
-            <div>
-                <Switch>
-                    <Route path='/home/lab' exact component={LabList}/>
-                    <Route path='/home/lab/testJs' component={TestJs}/>
-                </Switch>
+            <div className={'container'}>
+                <h2>{this.props.match.params.testTitle}</h2>
+                <Ques/>
             </div>
         )
     }
