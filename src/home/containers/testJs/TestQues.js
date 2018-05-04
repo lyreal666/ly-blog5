@@ -32,6 +32,7 @@ class Model extends Component {
             </div>
         )
     }
+
 }
 
 export default Model;
