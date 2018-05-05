@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Menu, Icon } from 'antd';
 const { Header, Sider, Content } = Layout;
 
+
 export default class Admin extends React.Component {
     state = {
         collapsed: false,
@@ -10,7 +11,7 @@ export default class Admin extends React.Component {
         this.setState({
             collapsed: !this.state.collapsed,
         });
-    };
+    }
     render() {
         return (
             <Layout>
