@@ -1,3 +1,21 @@
 .admin {
     //display: flex;
+  margin-top: -54px;
+  height: 960px;
+}
+
+.adminHeader {
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .admin {
+    margin-top: -56px;
+  }
+}
+
+#components-layout-demo-side .logo {
+  height: 32px;
+  background: rgba(255,255,255,.2);
+  margin: 16px;
 }
