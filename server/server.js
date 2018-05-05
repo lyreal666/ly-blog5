@@ -26,7 +26,7 @@ server.use(Static(
     path.join(__dirname, staticPath))
 );
 
+const port = 8081;
 
-
-server.listen(8080);
-console.log('server is running at http://127.0.0.1:8080/');
+server.listen(port);
+console.log(`server is running at http://localhost:${port}/`);

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import styles from './style.scss';
+import Header from '../header/Header';
 
-const { Header, Content, Footer, Sider } = Layout;
+const {Content, Footer, Sider } = Layout;
 
 
 const SubMenu = Menu.SubMenu;
