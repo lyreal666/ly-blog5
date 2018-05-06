@@ -1,6 +1,7 @@
 const fs = require('fs'),
     Static = require('koa-static'),
     path = require('path'),
+    bodyParser = require('koa-bodyparser'),
     Koa2 = require('koa2');
 // historyFallback = require('koa2-history-api-fallback'),
 // server.use(historyFallback());
@@ -13,6 +14,12 @@ let server = new Koa2();
 
 const staticPath = '../build';
 
+server.use(bodyParser());
+
+server.use(Static(
+    path.join(__dirname, staticPath))
+);
+
 server.use(async (ctx, next) => {
     await next();
     debug("method: <" + ctx.request.method + '> url: ' + ctx.request.url);
@@ -22,10 +29,6 @@ server.use(async (ctx, next) => {
     }
 
 });
-
-server.use(Static(
-    path.join(__dirname, staticPath))
-);
 
 const port = 8081;
 
