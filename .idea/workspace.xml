@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b72055a4-fb23-470d-8f63-200602d772d6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/server/dbConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/init_db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/configs/dbConfig/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/configs/dbConfig/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/configs/dbConfig/override.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/configs/dbConfig/override.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/configs/dbConfig/override.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/configs/override.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middlewares/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/components/loginBox/LoginBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/components/loginBox/LoginBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="default.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/configs/dbConfig/default.js">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="2509">
+              <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -52,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/server/middlewares/controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="759">
-              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -61,16 +56,16 @@
         <entry file="file://$PROJECT_DIR$/server/controllers/user.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="189">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -78,8 +73,8 @@
       <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="108">
+              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -93,11 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="init_db.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="init_db.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/init_db.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbConfig.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/dbConfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -105,15 +109,18 @@
       <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3092">
-              <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+            <state relative-caret-position="-510">
+              <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+              <folding>
+                <element signature="e#279#404#0" />
+                <element signature="e#540#861#0" />
+                <element signature="e#956#1020#0" />
+                <element signature="e#1044#1108#0" />
+                <element signature="e#2038#2724#0" />
+                <element signature="e#2829#3161#0" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/configs/dbConfig/test.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -204,8 +211,6 @@
         <option value="$PROJECT_DIR$/src/home/components/registerBox/RegisterBox.js" />
         <option value="$PROJECT_DIR$/server/config.js" />
         <option value="$PROJECT_DIR$/server/configs/dbConfig/test.js" />
-        <option value="$PROJECT_DIR$/server/model.js" />
-        <option value="$PROJECT_DIR$/server/db.js" />
         <option value="$PROJECT_DIR$/server/models/User.js" />
         <option value="$PROJECT_DIR$/server/configs/dbConfig/override.js" />
         <option value="$PROJECT_DIR$/server/init_db.js" />
@@ -214,6 +219,8 @@
         <option value="$PROJECT_DIR$/server/middlewares/controller.js" />
         <option value="$PROJECT_DIR$/server/controllers/user.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/db.js" />
+        <option value="$PROJECT_DIR$/server/model.js" />
       </list>
     </option>
   </component>
@@ -262,13 +269,7 @@
               <item name="blog5" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog5" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog5" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="middlewares" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,8 +300,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\codingSpace\javascript\koa2\my_blog\blog5\server\configs\dbConfig" />
       <recent name="F:\codingSpace\javascript\koa2\my_blog\blog5\server\configs" />
+      <recent name="F:\codingSpace\javascript\koa2\my_blog\blog5\server\configs\dbConfig" />
       <recent name="F:\codingSpace\javascript\koa2\my_blog\blog5\src\home\containers" />
       <recent name="F:\codingSpace\javascript\koa2\my_blog\blog5\src\admin\components" />
     </key>
@@ -322,26 +323,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.server.js">
-    <configuration name="User.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="User.js" working-dir="$PROJECT_DIR$/server/models" />
+  <component name="RunManager" selected="Node.js.init_db.js">
     <configuration name="controller.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="controller.js" working-dir="$PROJECT_DIR$/server/middlewares" />
+    <configuration name="db.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="db.js" working-dir="$PROJECT_DIR$/server" />
     <configuration name="init_db.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="init_db.js" working-dir="$PROJECT_DIR$/server" />
     <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/server" />
     <configuration name="user.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="user.js" working-dir="$PROJECT_DIR$/server/controllers" />
     <list>
       <item itemvalue="Node.js.server.js" />
-      <item itemvalue="Node.js.init_db.js" />
-      <item itemvalue="Node.js.User.js" />
       <item itemvalue="Node.js.controller.js" />
       <item itemvalue="Node.js.user.js" />
+      <item itemvalue="Node.js.db.js" />
+      <item itemvalue="Node.js.init_db.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.init_db.js" />
         <item itemvalue="Node.js.server.js" />
+        <item itemvalue="Node.js.db.js" />
         <item itemvalue="Node.js.user.js" />
         <item itemvalue="Node.js.controller.js" />
-        <item itemvalue="Node.js.User.js" />
-        <item itemvalue="Node.js.init_db.js" />
       </list>
     </recent_temporary>
   </component>
@@ -359,12 +360,12 @@
       <workItem from="1525174916514" duration="13000" />
       <workItem from="1525174972030" duration="31396000" />
       <workItem from="1525485070786" duration="6987000" />
-      <workItem from="1525504095213" duration="41880000" />
+      <workItem from="1525504095213" duration="43995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81591000" />
+    <option name="totallyTimeSpent" value="83706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -658,20 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2428">
-          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/dbConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home/containers/lab/Lab.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -689,7 +676,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/configs/dbConfig/override.js">
+    <entry file="file://$PROJECT_DIR$/server/configs/override.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
@@ -699,24 +686,10 @@
     <entry file="file://$PROJECT_DIR$/server/configs/dbConfig/test.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3092">
-          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/configs/dbConfig/default.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/init_db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -734,31 +707,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/middlewares/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2509">
+          <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+          <folding>
+            <element signature="e#279#404#0" />
+            <element signature="e#540#861#0" />
+            <element signature="e#956#1020#0" />
+            <element signature="e#1044#1108#0" />
+            <element signature="e#2038#2724#0" />
+            <element signature="e#2829#3161#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="189">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/dbConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/init_db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>

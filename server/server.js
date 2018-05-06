@@ -4,7 +4,7 @@ const fs = require('fs'),
     bodyParser = require('koa-bodyparser'),
     Koa2 = require('koa2');
 
-//const Model = require('./model');
+const Model = require('./model');
 const controllers = require('./middlewares/controller');
 
 const debug = (...args) => {
