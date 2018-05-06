@@ -64,12 +64,13 @@ export default class LoginBox extends React.Component {
 
     render() {
         return (
-            <form>
+            <form method={'post'} action={'/user/login'}>
                 <div className="form-group row">
                     <label htmlFor="inputEmail3" className="col-md-2 form-control-label">邮箱</label>
                     <div className="col-md-10">
                         <input
                             type="email"
+                            name={'account'}
                             className="form-control"
                             id="inputEmail3"
                             placeholder="Email"
@@ -83,6 +84,7 @@ export default class LoginBox extends React.Component {
                     <label htmlFor="inputPassword3" className="col-md-2 form-control-label">密码</label>
                     <div className="col-md-10">
                         <input
+                            name={'password'}
                             type="password"
                             className="form-control"
                             id="inputPassword3"
@@ -97,6 +99,7 @@ export default class LoginBox extends React.Component {
                     <div className={'col-md-2'}></div>
                     <div className={'checkbox col-md-5'}>
                         <input
+                            name={'isSavePwd'}
                             type="checkbox"
                             checked={this.state.isSavePwd}
                             onChange={this.handleClick.bind(this)}

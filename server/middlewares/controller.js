@@ -23,11 +23,13 @@ function addMapping(mapping) {
 }
 
 function addControllers(dir) {
-    const files = fs.readFileSync(dir, 'utf-8');
-    const js_files = files.filter(file => file.endWith('.js'));
+    console.log(`add controllers under dir ${dir}`);
+    const files = fs.readdirSync(dir);
+    const js_files = files.filter(file => file.endsWith('.js'));
+
     js_files.forEach(file => {
         console.log(`process controller: ${file}...`);
-        const mapping = require(path.join(__dirname, 'controllers', file));
+        const mapping = require(path.join(__dirname.replace('middlewares', ''), 'controllers', file.slice(0, -3)));
         console.log(mapping);
         if (mapping) {
             addMapping(mapping);
@@ -39,6 +41,6 @@ function addControllers(dir) {
 
 module.exports = function (dir) {
     let controllers_dir = dir || 'controllers'; // 如果不传参数，扫描目录默认为'controllers'
-    addControllers(router, controllers_dir);
+    addControllers(controllers_dir);
     return router.routes();
 };

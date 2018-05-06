@@ -1,6 +1,6 @@
 const fs = require('fs'),
       path = require('path'),
-      db = require('./db');
+      db = require('./dbConfig');
 
 let files = fs.readdirSync(path.join(__dirname, 'models'));
 

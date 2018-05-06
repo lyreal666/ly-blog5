@@ -3,8 +3,9 @@ const fs = require('fs'),
     path = require('path'),
     bodyParser = require('koa-bodyparser'),
     Koa2 = require('koa2');
-// historyFallback = require('koa2-history-api-fallback'),
-// server.use(historyFallback());
+
+//const Model = require('./model');
+const controllers = require('./middlewares/controller');
 
 const debug = (...args) => {
     console.log(args.reduce((x, y) => x + y + ' ', ''));
@@ -15,7 +16,7 @@ let server = new Koa2();
 const staticPath = '../build';
 
 server.use(bodyParser());
-
+server.use(controllers());
 server.use(Static(
     path.join(__dirname, staticPath))
 );
