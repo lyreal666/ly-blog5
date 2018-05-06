@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import RegisterBox from "../registerBox/RegisterBox";
 
 
 export default class LoginBox extends React.Component {
@@ -25,7 +26,7 @@ export default class LoginBox extends React.Component {
         this.setState(state)
     }
 
-    handleBlur(key, event) {
+    static handleBlur(key, event) {
         localStorage.setItem(key, event.target.value);
     }
 
@@ -74,7 +75,7 @@ export default class LoginBox extends React.Component {
                             placeholder="Email"
                             value={this.state.account}
                             onChange={this.handleValueChange.bind(this, 'account')}
-                            onBlur={this.handleBlur.bind(this, 'loginAccount')}
+                            onBlur={RegisterBox.handleBlur.bind(this, 'loginAccount')}
                         />
                     </div>
                 </div>
@@ -88,7 +89,7 @@ export default class LoginBox extends React.Component {
                             placeholder="Password"
                             value={this.state.password}
                             onChange={this.handleValueChange.bind(this, 'password')}
-                            onBlur={this.handleBlur.bind(this, 'loginPwd')}
+                            onBlur={RegisterBox.handleBlur.bind(this, 'loginPwd')}
                         />
                     </div>
                 </div>

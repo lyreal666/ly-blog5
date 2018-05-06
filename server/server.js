@@ -1,8 +1,9 @@
 const fs = require('fs'),
     Static = require('koa-static'),
     path = require('path'),
-    historyFallback = require('koa2-history-api-fallback'),
     Koa2 = require('koa2');
+// historyFallback = require('koa2-history-api-fallback'),
+// server.use(historyFallback());
 
 const debug = (...args) => {
     console.log(args.reduce((x, y) => x + y + ' ', ''));
@@ -12,14 +13,14 @@ let server = new Koa2();
 
 const staticPath = '../build';
 
-server.use(historyFallback());
-
 server.use(async (ctx, next) => {
     await next();
     debug("method: <" + ctx.request.method + '> url: ' + ctx.request.url);
-    // ctx.response.type = 'text/html';
-    // const html = fs.readFileSync('../build/index.html');
-    // ctx.response.body = html;
+    if (ctx.request.path === '/') {
+        ctx.response.type = 'text/html';
+        ctx.response.body = fs.readFileSync('../build/index.html');
+    }
+
 });
 
 server.use(Static(

@@ -23,7 +23,7 @@ export default class RegisterBox extends React.Component {
         this.setState(state)
     }
 
-    handleBlur(key, event) {
+    static handleBlur(key, event) {
         localStorage.setItem(key, event.target.value);
     }
 
@@ -69,7 +69,7 @@ export default class RegisterBox extends React.Component {
                             id="inputEmail3"
                             placeholder="Email"
                             value={this.state.account}
-                            onBlur={this.handleBlur.bind(this, 'RegisterAccount')}
+                            onBlur={RegisterBox.handleBlur.bind(this, 'RegisterAccount')}
                             onChange={this.handleValueChange.bind(this, 'account')}
                         />
                     </div>
@@ -83,7 +83,7 @@ export default class RegisterBox extends React.Component {
                             id="inputPassword3"
                             placeholder="Password"
                             value={this.state.password}
-                            onBlur={this.handleBlur.bind(this, 'RegisterPwd')}
+                            onBlur={RegisterBox.handleBlur.bind(this, 'RegisterPwd')}
                             onChange={this.handleValueChange.bind(this, 'password')}
                         />
                     </div>
