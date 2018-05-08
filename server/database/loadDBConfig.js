@@ -1,7 +1,7 @@
-const defaultConfig = './configs/dbConfig/default.js';
+const defaultConfig = './dbConfig/default.js';
 // 可设定为绝对路径，如 /opt/product/config-override.js
-const overrideConfig = './configs/dbConfig/override.js';
-const testConfig = './configs/dbConfig/test';
+const overrideConfig = './dbConfig/override.js';
+const testConfig = './dbConfig/test';
 
 const fs = require('fs');
 

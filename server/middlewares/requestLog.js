@@ -6,4 +6,4 @@ module.exports = async (ctx, next) => {
     await next();
     execTime = new Date().getTime() - start;
     ctx.response.set('X-Response-Time', `${execTime}ms`);
-}
+};

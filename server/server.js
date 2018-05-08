@@ -5,11 +5,11 @@ const fs = require('fs'),
 // 导入中间件
 const startConfig = require('./middlewares/startConfig');
 const requestLog = require('./middlewares/requestLog');
-const fRouteFallBack = require('./middlewares/fRouteFallBack');
 const Static = require('koa-static');
 const bodyParser = require('koa-bodyparser');
-const Model = require('./model');
+const Model = require('./database/model');
 const templating = require('./middlewares/templating');
+const {restify} = require('./middlewares/rest');
 const controllers = require('./middlewares/controller');
 
 let server = new Koa2();
@@ -17,18 +17,18 @@ let server = new Koa2();
 // 加载中间件
 server.use(startConfig('dev'));
 server.use(requestLog); // 记录请求
-server.use(fRouteFallBack);
 const staticPath = '../build';
 server.use(Static(
     path.join(__dirname, staticPath))
 );
 server.use(bodyParser());
-server.use(controllers());
+server.use(restify('/api/'));
+server.use(controllers(['controllers', 'api']));
 const isProduction = process.env.NODE_ENV === 'production';
-server.use(templating('views', {
+server.use(templating('views', { // 加载模板引擎
     noCache: !isProduction,
     watch: !isProduction
-})); // 加载模板引擎
+}));
 
 
 
