@@ -33,6 +33,7 @@
     "koa-static": "^4.0.2",
     "koa2": "^2.0.0-alpha.7",
     "koa2-history-api-fallback": "^0.0.5",
+    "log4js": "^2.5.3",
     "mime": "^2.3.1",
     "mocha": "^5.1.1",
     "mysql": "^2.15.0",
