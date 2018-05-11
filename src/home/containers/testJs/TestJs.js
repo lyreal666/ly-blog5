@@ -31,7 +31,7 @@ class TestJs extends Component {
             <div>
                 <Switch>
                     <Route path={'/home/lab/testJs'} exact component={QuesList}/>
-                    <Route path={'/home/lab/testJs/:testTitle'} component={TestQues}></Route>
+                    <Route path={'/home/lab/testJs/:testTitle'} component={TestQues}/>
                 </Switch>
             </div>
         )

@@ -19,28 +19,10 @@ class LabList extends Component {
                 desc: '用来检测js学习进度.....'
             },
             {
-                id: 'testJs',
-                picLink: 'card_bg.png',
-                title: 'js测验',
-                desc: '用来检测js学习进度.....'
-            },
-            {
-                id: 'testJs',
-                picLink: 'card_bg.png',
-                title: 'js测验',
-                desc: '用来检测js学习进度.....'
-            },
-            {
-                id: 'testJs',
-                picLink: 'card_bg.png',
-                title: 'js测验',
-                desc: '用来检测js学习进度.....'
-            },
-            {
-                id: 'testJs',
-                picLink: 'card_bg.png',
-                title: 'js测验',
-                desc: '用来检测js学习进度.....'
+                id: 'powerfulSearch',
+                picLink: 'powerful_search.jpg',
+                title: '资源神器',
+                desc: '各种源各种福利'
             }
         ]
     };

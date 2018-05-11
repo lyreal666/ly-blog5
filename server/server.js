@@ -4,6 +4,7 @@ const fs = require('fs'),
 
 // 导入中间件
 const log4j = require('./middlewares/log4jConfig');
+const serverStatic =  require('./middlewares/serverStatic');
 const startConfig = require('./middlewares/startConfig');
 const requestLog = require('./middlewares/requestLog');
 const Static = require('koa-static');
@@ -23,6 +24,7 @@ let staticPath = '../build';
 server.use(Static(
     path.join(__dirname, staticPath))
 );
+server.use(serverStatic('/sstatic/', './static'))
 server.use(bodyParser());
 server.use(restify('/api/'));
 server.use(controllers(['controllers', 'api']));
