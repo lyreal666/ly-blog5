@@ -11,6 +11,13 @@ export default class SearchIndex extends React.Component {
         }
     }
 
+    handleKeyDown(event) {
+        if (event.keyCode === 13) {
+            this.refs.searchStr.click();
+            console.log('回车')
+        }
+    }
+
     handSearchChange(event) {
         this.setState({
             searchStr: event.target.value
@@ -42,11 +49,13 @@ export default class SearchIndex extends React.Component {
                                 className="form-control"
                                 placeholder="Search for..."
                                 value={this.state.searchStr}
+                                autoFocus='true'
                                 onChange={this.handSearchChange.bind(this)}
+                                onKeyDown={this.handleKeyDown.bind(this)}
                             />
                             <span className="input-group-btn">
                                 <Link to={`/home/lab/powerfulSearch/${this.state.searchStr}`}>
-                                   <button className="btn btn-secondary" type="button">Go!</button>
+                                   <button ref={'searchStr'} className="btn btn-secondary" type="button">Go!</button>
                                 </Link>
                             </span>
                         </div>

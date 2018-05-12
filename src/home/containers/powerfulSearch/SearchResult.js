@@ -17,9 +17,20 @@ export default class SearchResult extends React.Component {
         axios.get(`http://localhost:8081/panSpider&searchStr=${this.state.searchStr}.json`).then(res => {
             console.log(res);
             this.setState({
-                searchArr: res
+                searchArr: res.data
             })
         });
+    }
+
+    componentDidMount() {
+
+    }
+
+    handleKeyDown(event) {
+        if (event.keyCode === 13) {
+            console.log('回车');
+            this.refs.searchStr.getInputDOMNode().click();
+        }
     }
     handSearchChange(event) {
         this.setState({
@@ -29,7 +40,7 @@ export default class SearchResult extends React.Component {
 
     render() {
         return (
-            <div className={`container ${styles.searchResult}`}>
+            <div className={`${styles.searchResult}`}>
                 <div className="row">
                     <div className="col-lg-10">
                         <div className="input-group">
@@ -53,10 +64,12 @@ export default class SearchResult extends React.Component {
                                 placeholder="Search for..."
                                 value={this.state.searchStr}
                                 onChange={this.handSearchChange.bind(this)}
+                                onKeyDown={this.handleKeyDown.bind(this)}
+                                autoFocus="true"
                             />
                             <span className="input-group-btn">
                                 <Link to={`/home/lab/powerfulSearch/${this.state.searchStr}`}>
-                                   <button className="btn btn-secondary" type="button">Go!</button>
+                                   <button className="btn btn-secondary" ref={'search'} type="button">Go!</button>
                                 </Link>
                             </span>
                         </div>
@@ -83,7 +96,7 @@ export default class SearchResult extends React.Component {
                                     <td>{ele.sharer}</td>
                                     <td>{ele.shareTime}</td>
                                     <th>{ele.visitedTimes}</th>
-                                    <th>{ele.panLink}</th>
+                                    <th><a href={ele.panLink}>跳转下载页</a></th>
                                 </tr>
                                 )
                         })
