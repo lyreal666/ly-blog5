@@ -3,7 +3,6 @@ const fs = require('fs'),
     Koa2 = require('koa2');
 
 // 导入中间件
-const log4j = require('./middlewares/log4jConfig');
 const serverStatic =  require('./middlewares/serverStatic');
 const startConfig = require('./middlewares/startConfig');
 const requestLog = require('./middlewares/requestLog');
@@ -17,7 +16,6 @@ const controllers = require('./middlewares/controller');
 let server = new Koa2();
 
 // 加载中间件
-server.use(log4j);
 server.use(startConfig('dev'));
 server.use(requestLog); // 记录请求
 let staticPath = '../build';
@@ -36,4 +34,4 @@ server.use(templating('views', { // 加载模板引擎
 
 const port = 8081;
 server.listen(port);
-console.log(`server is running at http://localhost:${port}/`);
+console.log(`server is runningat http://localhost:${port}/`);

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import styles from './style.scss';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,6 @@ export default class SearchIndex extends React.Component {
     handleKeyDown(event) {
         if (event.keyCode === 13) {
             this.refs.searchStr.click();
-            console.log('回车')
         }
     }
 
@@ -55,7 +55,7 @@ export default class SearchIndex extends React.Component {
                             />
                             <span className="input-group-btn">
                                 <Link to={`/home/lab/powerfulSearch/${this.state.searchStr}`}>
-                                   <button ref={'searchStr'} className="btn btn-secondary" type="button">Go!</button>
+                                   <button ref="searchStr" className="btn btn-secondary" type="button">Go!</button>
                                 </Link>
                             </span>
                         </div>

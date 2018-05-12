@@ -10,16 +10,12 @@ export default class SearchResult extends React.Component {
         this.state = {
             searchStr: this.props.match.params.searchStr,
             searchArr: []
-        }
+        };
+        this._loadData = this._loadData.bind(this);
     }
 
     componentWillMount() {
-        axios.get(`http://localhost:8081/panSpider&searchStr=${this.state.searchStr}.json`).then(res => {
-            console.log(res);
-            this.setState({
-                searchArr: res.data
-            })
-        });
+        this._loadData()
     }
 
     componentDidMount() {
@@ -28,16 +24,25 @@ export default class SearchResult extends React.Component {
 
     handleKeyDown(event) {
         if (event.keyCode === 13) {
-            console.log('回车');
-            this.refs.searchStr.getInputDOMNode().click();
+            this.refs.search.click();
+            this._loadData()
         }
     }
+
     handSearchChange(event) {
         this.setState({
             searchStr: event.target.value
         })
     }
 
+    _loadData() {
+        axios.get(`http://localhost:8081/panSpider&searchStr=${this.state.searchStr}.json`).then(res => {
+            console.log(res);
+            this.setState({
+                searchArr: res.data
+            })
+        });
+    }
     render() {
         return (
             <div className={`${styles.searchResult}`}>
@@ -69,7 +74,7 @@ export default class SearchResult extends React.Component {
                             />
                             <span className="input-group-btn">
                                 <Link to={`/home/lab/powerfulSearch/${this.state.searchStr}`}>
-                                   <button className="btn btn-secondary" ref={'search'} type="button">Go!</button>
+                                   <button className="btn btn-secondary" ref="search" type="button">Go!</button>
                                 </Link>
                             </span>
                         </div>

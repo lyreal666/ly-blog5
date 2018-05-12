@@ -44,8 +44,14 @@ const pansoso = async (searchStr, offset=1, count=10) => {
                 const exactPanA = $('div.down a');
                 if (exactPanA[1]) {
                     const exactPanHref = $($('div.down a')[1]).attr('href');
-                    const regStr = /^http:\/\/www\.pansoso\.com\/\?a=go&url=(.+?)&t=.+?&m=$/;
-                    const panUrlArgu = exactPanHref.match(regStr)[1];
+                    const regStr = /^http:\/\/www\.pansoso\.com\/\?a=go&url=(.+?)&t=.+?&m=/;
+                    const matchR = exactPanHref.match(regStr);
+                    let panUrlArgu;
+                    if (matchR) {
+                        panUrlArgu =  matchR[1];
+                    } else {
+                        console.error('匹配%s不成功', exactPanHref);
+                    }
                     if (panUrlArgu) {
                         const panUrl = `http://to.pansoso.com/?a=to&url=${panUrlArgu}`;
                         pan.panLink = panUrl;
